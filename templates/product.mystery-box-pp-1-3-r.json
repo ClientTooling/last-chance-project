@@ -344,32 +344,6 @@
         "max_image_zoom_level": 3
       }
     },
-    "rich_text_mhGGhT": {
-      "type": "rich-text",
-      "blocks": {
-        "richtext_qx9d9R": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>‎Uns vertrauen über 90k+ zufriedenen Kund*innen</p>"
-          }
-        }
-      },
-      "block_order": [
-        "richtext_qx9d9R"
-      ],
-      "custom_css": [
-        "div.prose.text-center p {font-size: 20px; font-weight: bold; text-align: center; line-height: 1.5; margin: 20px 0; font-family: Montserrat;}",
-        ".container {margin-bottom: -45px;}",
-        ".container {margin-top: 70px;}",
-        " /* Breite des Textcontainers in der Rich Text Section anpassen */"
-      ],
-      "settings": {
-        "separate_section_with_border": true,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": true
-      }
-    },
     "multiple_media_with_text_YnMdpC": {
       "type": "multiple-media-with-text",
       "blocks": {
@@ -683,27 +657,28 @@
         "content": ""
       }
     },
-    "rich_text_NamP8W": {
+    "rich_text_mhGGhT": {
       "type": "rich-text",
       "blocks": {
-        "button_gEBUAJ": {
-          "type": "button",
+        "richtext_qx9d9R": {
+          "type": "richtext",
           "settings": {
-            "style": "solid",
-            "text": "DAFÜR WÜRD ICH UMBRINGEN!",
-            "url": "shopify://products/everyday-bb-tasche",
-            "background": "",
-            "text_color": ""
+            "content": "<p>‎Uns vertrauen über 90k+ zufriedenen Kund*innen</p>"
           }
         }
       },
       "block_order": [
-        "button_gEBUAJ"
+        "richtext_qx9d9R"
       ],
-      "disabled": true,
+      "custom_css": [
+        "div.prose.text-center p {font-size: 20px; font-weight: bold; text-align: center; line-height: 1.5; margin: 20px 0; font-family: Montserrat;}",
+        ".container {margin-bottom: -45px;}",
+        ".container {margin-top: 70px;}",
+        " /* Breite des Textcontainers in der Rich Text Section anpassen */"
+      ],
       "settings": {
-        "separate_section_with_border": false,
-        "content_width": "lg",
+        "separate_section_with_border": true,
+        "content_width": "sm",
         "text_position": "center",
         "remove_vertical_spacing": true
       }
@@ -955,7 +930,6 @@
   },
   "order": [
     "main",
-    "rich_text_mhGGhT",
     "multiple_media_with_text_YnMdpC",
     "image_with_text_4mFGch",
     "image_with_text_wCaxXA",
@@ -966,7 +940,7 @@
     "rich_text_HCxig9",
     "image_with_text_ghK6pt",
     "multi_column_6p9Lf6",
-    "rich_text_NamP8W",
+    "rich_text_mhGGhT",
     "1720551022fbeec295",
     "multi_column_VeDfVx",
     "featured_collections_jUNYRf",
