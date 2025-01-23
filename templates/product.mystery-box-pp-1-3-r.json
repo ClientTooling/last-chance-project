@@ -360,46 +360,6 @@
         "remove_vertical_spacing": true
       }
     },
-    "rich_text_HTjEwL": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_yFDyUH": {
-          "type": "heading",
-          "settings": {
-            "text": "Die perfekte alltagstasche",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_yFDyUH"
-      ],
-      "settings": {
-        "separate_section_with_border": true,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": true
-      }
-    },
-    "17228139502f09e94b": {
-      "type": "apps",
-      "blocks": {
-        "reelup_shoppable_videos_reels_reelup_product_slider_N6JntQ": {
-          "type": "shopify://apps/reelup-shoppable-videos-reels/blocks/reelup-product-slider/a8ec9e4d-d192-44f7-9c23-595f9ee7dd5b",
-          "settings": {
-            "debugging_script": ""
-          }
-        }
-      },
-      "block_order": [
-        "reelup_shoppable_videos_reels_reelup_product_slider_N6JntQ"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "remove_vertical_spacing": true,
-        "remove_horizontal_spacing": true
-      }
-    },
     "multiple_media_with_text_YnMdpC": {
       "type": "multiple-media-with-text",
       "blocks": {
@@ -934,8 +894,6 @@
   "order": [
     "main",
     "rich_text_mhGGhT",
-    "rich_text_HTjEwL",
-    "17228139502f09e94b",
     "multiple_media_with_text_YnMdpC",
     "image_with_text_4mFGch",
     "image_with_text_wCaxXA",
