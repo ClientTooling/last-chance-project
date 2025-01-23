@@ -738,6 +738,58 @@
         "remove_horizontal_spacing": false
       }
     },
+    "multi_column_VeDfVx": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_TW3gxA": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_eFz7cr": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_cNYfYx": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "",
+            "heading_tag": "h3",
+            "content": "",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_TW3gxA",
+        "image_with_text_eFz7cr",
+        "image_with_text_cNYfYx"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
     "featured_collections_jUNYRf": {
       "type": "featured-collections",
       "blocks": {
@@ -916,6 +968,7 @@
     "multi_column_6p9Lf6",
     "rich_text_NamP8W",
     "1720551022fbeec295",
+    "multi_column_VeDfVx",
     "featured_collections_jUNYRf",
     "faq_PBbAPX",
     "1723221460f425ed5b",
