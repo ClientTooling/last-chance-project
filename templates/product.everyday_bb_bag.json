@@ -1118,29 +1118,6 @@
         "padding_bottom_mobile": 0
       }
     },
-    "tabs_cg4Frx": {
-      "type": "tabs",
-      "blocks": {
-        "tab_WWijzV": {
-          "type": "tab",
-          "settings": {
-            "title": "Tab 3",
-            "content": "<p>Share information about your shipping rates, return policy or contact information.</p>",
-            "page": "",
-            "open_on_mobile": false
-          }
-        }
-      },
-      "block_order": [
-        "tab_WWijzV"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "subheading": "",
-        "title": "",
-        "text_alignment": "center"
-      }
-    },
     "richtext_lp_TfyLMT": {
       "type": "richtext_lp",
       "blocks": {
@@ -1248,7 +1225,6 @@
     "image_with_text_lp_VXnhXC",
     "collection_slider_YMHT4R",
     "image_with_text_lp_bCU4dy",
-    "tabs_cg4Frx",
     "richtext_lp_TfyLMT"
   ]
 }
