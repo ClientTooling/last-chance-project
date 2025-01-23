@@ -265,8 +265,16 @@
           "disabled": true,
           "settings": {}
         },
+        "description_m6WWth": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true,
+            "show_below_gallery": false
+          }
+        },
         "accordion_LNi7qJ": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "show_below_gallery": false,
             "icon": "none",
@@ -319,6 +327,7 @@
         "sternify_benefit_four_boxes_v2_q7zc3y",
         "liquid_LnxNyx",
         "separator_qBeNiN",
+        "description_m6WWth",
         "accordion_LNi7qJ",
         "accordion_QKbcef",
         "accordion_VLeLj8"
