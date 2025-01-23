@@ -1,25 +1,25 @@
 {%- comment -%}
-----------------------------------------------------------------------------------------------------------------------
-PRODUCT CARD COMPONENT
-----------------------------------------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------------------------------------------
+  PRODUCT CARD COMPONENT
+  ----------------------------------------------------------------------------------------------------------------------
 
-This component is used in collection and featured collection to render a single product as a card
+  This component is used in collection and featured collection to render a single product as a card
 
-********************************************
-Supported variables
-********************************************
+  ********************************************
+  Supported variables
+  ********************************************
 
-* product: the product to render
-* stacked: define if the product is stacked or not on mobile
-* reveal: if set to true, the card will be revealed on scroll through animation
-* show_badges: show or not the badges (default to true if nothing is set).
-* show_rating: show or not the rating. If nothing is set, the theme uses the default product card setting
-* show_vendor: show or not the vendor. If nothing is set, the theme uses the default product card setting
-* show_quick_buy: show or not the quick buy (which open a modal if the product contains more than 1 choice)
-* show_secondary_image: show or not the secondary media on hover. If nothing is set, the theme uses the default product card setting
-* show_swatches: show or not the swatches. The swatch type is inferred from setting, and will default to true if nothing is set.
-* hide_product_information: if set to true, all content (vendor, badge, title...) are not rendered, to create image-based grid
-* quick_buy_context: a unique text to dissociate quick buy if the same product is embedded multiple times
+  * product: the product to render
+  * stacked: define if the product is stacked or not on mobile
+  * reveal: if set to true, the card will be revealed on scroll through animation
+  * show_badges: show or not the badges (default to true if nothing is set).
+  * show_rating: show or not the rating. If nothing is set, the theme uses the default product card setting
+  * show_vendor: show or not the vendor. If nothing is set, the theme uses the default product card setting
+  * show_quick_buy: show or not the quick buy (which open a modal if the product contains more than 1 choice)
+  * show_secondary_image: show or not the secondary media on hover. If nothing is set, the theme uses the default product card setting
+  * show_swatches: show or not the swatches. The swatch type is inferred from setting, and will default to true if nothing is set.
+  * hide_product_information: if set to true, all content (vendor, badge, title...) are not rendered, to create image-based grid
+  * quick_buy_context: a unique text to dissociate quick buy if the same product is embedded multiple times
 {%- endcomment -%}
 
 {%- liquid
@@ -44,11 +44,17 @@ Supported variables
   endif
 -%}
 
-<product-card class="product-card" {% if reveal %}reveal-on-scroll="true"{% endif %} handle="{{ product.handle | escape }}">
+<product-card
+  class="product-card"
+  {% if reveal %}
+    reveal-on-scroll="true"
+  {% endif %}
+  handle="{{ product.handle | escape }}"
+>
   {%- comment -%}
-  --------------------------------------------------------------------------------------------------------------------
-  PRODUCT MEDIA
-  --------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------
+    PRODUCT MEDIA
+    --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
   {%- if product.media.size > 0 -%}
@@ -56,6 +62,8 @@ Supported variables
       {%- if show_badges -%}
         {%- render 'product-badges', product: product, vertical: true -%}
       {%- endif -%}
+
+      {%- render 'product-label', product: product, label_styles: 'top: 10px; left: 10px; z-index: 100' -%}
 
       <a href="{{ product.url }}" class="product-card__media" data-instant>
         {%- capture sizes -%}
@@ -67,11 +75,28 @@ Supported variables
         {%- endcapture -%}
 
         {%- capture main_image_classes -%}product-card__image product-card__image--primary {% if settings.product_image_aspect_ratio contains 'crop' %}object-cover{% endif %} aspect-{{ settings.product_image_aspect_ratio | split: '_' | first }}{%- endcapture -%}
-        {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: main_image_classes -}}
+        {{-
+          product.featured_media
+          | image_url: width: product.featured_media.width
+          | image_tag:
+            loading: 'lazy',
+            sizes: sizes,
+            widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800',
+            class: main_image_classes
+        -}}
 
         {%- if show_secondary_image and product.media.size > 1 -%}
           {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}
-          {{- next_media | image_url: width: next_media.width | image_tag: class: 'product-card__image product-card__image--secondary', loading: 'lazy', fetchpriority: 'low', sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800' -}}
+          {{-
+            next_media
+            | image_url: width: next_media.width
+            | image_tag:
+              class: 'product-card__image product-card__image--secondary',
+              loading: 'lazy',
+              fetchpriority: 'low',
+              sizes: sizes,
+              widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800'
+          -}}
         {%- endif -%}
       </a>
 
@@ -100,9 +125,9 @@ Supported variables
   {%- endif -%}
 
   {%- comment -%}
-  --------------------------------------------------------------------------------------------------------------------
-  PRODUCT INFO
-  --------------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------------------
+    PRODUCT INFO
+    --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
   <div class="product-card__info empty:hidden">
@@ -122,22 +147,38 @@ Supported variables
         {%- if show_title or show_prices -%}
           <div class="v-stack justify-items-center gap-1">
             {%- if show_title -%}
-              <a href="{{ product.url }}" class="product-title {% if text_class != blank %}{{ text_class }}{% endif %} {% if settings.product_title_max_lines > 0 %}line-clamp{% endif %}" {% if settings.product_title_max_lines > 0 %}style="--line-clamp-count: {{ settings.product_title_max_lines }}"{% endif %} data-instant>
+              <a
+                href="{{ product.url }}"
+                class="product-title {% if text_class != blank %}{{ text_class }}{% endif %} {% if settings.product_title_max_lines > 0 %}line-clamp{% endif %}"
+                {% if settings.product_title_max_lines > 0 %}
+                  style="--line-clamp-count: {{ settings.product_title_max_lines }}"
+                {% endif %}
+                data-instant
+              >
                 {{- product.title -}}
               </a>
             {%- endif -%}
 
-
-           <!-- Start of Judge.me code -->
-      <div style='{{ jm_style }}' class='jdgm-widget jdgm-preview-badge' data-id='{{ product.id }}' data-auto-install='false'>
-        {{ product.metafields.judgeme.badge }}
-      </div>
-      <!-- End of Judge.me code -->
-<!-- RYVIU APP :: COLLECTION-WIDGET-TOTAL -->
-<div class="ryviu-collection">
-<ryviu-widget-total collection="1" reviews_data="{{product.metafields.ryviu.product_reviews_info  | escape  }}" product_id="{{product.id}}" handle="{{product.handle}}"></ryviu-widget-total>
-</div>
-<!-- RYVIU APP -->
+            <!-- Start of Judge.me code -->
+            <div
+              style="{{ jm_style }}"
+              class="jdgm-widget jdgm-preview-badge"
+              data-id="{{ product.id }}"
+              data-auto-install="false"
+            >
+              {{ product.metafields.judgeme.badge }}
+            </div>
+            <!-- End of Judge.me code -->
+            <!-- RYVIU APP :: COLLECTION-WIDGET-TOTAL -->
+            <div class="ryviu-collection">
+              <ryviu-widget-total
+                collection="1"
+                reviews_data="{{product.metafields.ryviu.product_reviews_info  | escape  }}"
+                product_id="{{product.id}}"
+                handle="{{product.handle}}"
+              ></ryviu-widget-total>
+            </div>
+            <!-- RYVIU APP -->
             {%- if show_prices -%}
               {%- render 'price-list', product: product, context: 'card' -%}
             {%- endif -%}
@@ -156,12 +197,17 @@ Supported variables
 
           {%- case settings.product_color_display -%}
             {%- when 'count' -%}
-              <p class="smallcaps text-subdued">{{- 'product.general.available_colors_count' | t: count: product_option.values.size -}}</p>
+              <p class="smallcaps text-subdued">
+                {{- 'product.general.available_colors_count' | t: count: product_option.values.size -}}
+              </p>
 
             {%- when 'swatch' -%}
               <fieldset class="h-stack wrap justify-center gap-1" data-option-position="{{ product_option.position }}">
                 {%- for option_value in product_option.values -%}
-                  {%- if forloop.first or product.selected_or_first_available_variant.matched and option_value == product_option.selected_value -%}
+                  {%- if forloop.first
+                    or product.selected_or_first_available_variant.matched
+                    and option_value == product_option.selected_value
+                  -%}
                     {%- assign selected = true -%}
                   {%- else -%}
                     {% assign selected = false %}
@@ -176,10 +222,13 @@ Supported variables
         {%- endif -%}
       {%- endfor -%}
     {%- endif -%}
-    
 
     {%- if show_rating -%}
-      {%- render 'product-rating', product: product, show_empty: settings.show_product_rating_if_empty, display_mode: settings.product_rating_mode -%}
+      {%- render 'product-rating',
+        product: product,
+        show_empty: settings.show_product_rating_if_empty,
+        display_mode: settings.product_rating_mode
+      -%}
     {%- endif -%}
   </div>
 </product-card>
