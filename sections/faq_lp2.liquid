@@ -1,0 +1,188 @@
+
+{%- style -%}
+  
+{% if section.settings.bg != blank %}
+    .section_bg_{{ section.id }} {
+      background-image:url({{section.settings.bg | image_url}});
+    background-size: cover;
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    }
+  {% endif %}
+{% if section.settings.bg_mobile != blank %}
+  @media screen and (max-width: 915px) {
+    .section_bg_{{ section.id }} {
+      background-image:url({{section.settings.bg_mobile | image_url}});
+    }
+  }
+  {% endif %}
+  @media screen and (max-width: 915px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top_mobile }}px;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    }
+  }
+  @media screen and (min-width: 915px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="faq_custom section_bg_{{ section.id }} {{ section.settings.custom_class }}"{% if section.settings.custom_id != blank %} id="{{ section.settings.custom_id }}"{% endif %}
+style="background-color:{{ section.settings.bg_color | default:'transparent' }};color:{{ section.settings.color | default:'#000' }};">
+   <div class="container_hk section-{{ section.id }}-padding">
+
+       {% if section.settings.heading != blank %}
+     <div class="faq_top center">
+      <h2 class="rich-text__heading  inline-richtext h1">{{ section.settings.heading }}</h2>
+       <div class="faq_subtext">{{ section.settings.text }}</div>
+     </div>
+       {% endif %}
+
+
+     <div class="faq_center">
+       <div class="faq_center_main">
+        {%- for block in section.blocks -%}
+              {%- if block.settings.question != blank -%}
+       <div class="faq_slider_item">
+       <div class="faq_slider_item_inner">
+          <div class="faq_question">
+           <span>{{ block.settings.question }}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="8" viewBox="0 0 5 8" fill="none">
+  <path d="M4.35365 4.35355C4.54892 4.15829 4.54892 3.84171 4.35365 3.64645L1.17167 0.464466C0.976411 0.269204 0.659828 0.269204 0.464566 0.464466C0.269304 0.659728 0.269304 0.976311 0.464566 1.17157L3.29299 4L0.464566 6.82843C0.269304 7.02369 0.269304 7.34027 0.464566 7.53553C0.659828 7.7308 0.976411 7.7308 1.17167 7.53553L4.35365 4.35355ZM4 4.5H4.0001V3.5H4V4.5Z" fill="initial"/>
+</svg>
+          </div>
+          <div class="faq_answer" style="display:none;">
+            {{ block.settings.answer }}
+          </div>
+       </div>
+           </div>
+              {%- endif -%}
+       {% endfor %}
+       </div>
+     </div>
+
+
+  
+     </div>
+      
+     
+  </div>
+
+{% schema %}
+  {
+    "name": "FAQ LP2",
+    "settings": [
+      {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "text",
+      "id": "custom_id",
+      "label": "Custom ID"
+    },
+      {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Section Background"
+    },
+      {
+      "type": "image_picker",
+      "id": "bg_mobile",
+      "label": "Section Background"
+    },
+     {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section Background Color"
+    },
+     {
+      "type": "color",
+      "id": "color",
+      "label": "Section Text Color"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top Desktop",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom Desktop",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top Mobile",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom Mobile",
+      "default": 50
+    }
+    ],
+  "blocks": [
+     {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+         {
+          "type": "inline_richtext",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ LP2"
+    }
+  ]
+  }
+{% endschema %}

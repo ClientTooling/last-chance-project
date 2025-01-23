@@ -1,0 +1,301 @@
+
+{%- style -%}
+  
+{% if section.settings.bg != blank %}
+    .section_bg_{{ section.id }} {
+      background-image:url({{section.settings.bg | image_url}});
+    background-size: cover;
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+  {% endif %}
+{% if section.settings.bg_mobile != blank %}
+  @media screen and (max-width: 915px) {
+    .section_bg_{{ section.id }} {
+      background-image:url({{section.settings.bg_mobile | image_url}});
+    }
+  }
+  {% endif %}
+  @media screen and (max-width: 915px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top_mobile }}px;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    }
+  }
+  @media screen and (min-width: 915px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="slider_review_slider_new_custom section_bg_{{ section.id }} {{ section.settings.custom_class }}"{% if section.settings.custom_id != blank %} id="{{ section.settings.custom_id }}"{% endif %}
+style="background-color:{{ section.settings.bg_color | default:'transparent' }};color:{{ section.settings.color | default:'#000' }};">
+   <div class="container_hk section-{{ section.id }}-padding">
+       {% if section.settings.heading != blank %}
+<div class="reviews_top_slider center">
+      <h2 class="rich-text__heading  inline-richtext h1">{{ section.settings.heading }}</h2>
+       {% if section.settings.subheading != blank %}
+      <div class="review_subheading">{{ section.settings.subheading }}</div>
+       {% endif %}
+     </div>
+       {% endif %}
+     <div class="relative">
+     <div class="reviews_center_slider_new">
+       <div class="review_slider_main_slider_new slider_{{ section.id }} custom_slick_slider same_height_slider mobile_auto_height_slider">
+        {%- for block in section.blocks -%}
+       <div class="review_slider_custom_slider_new_item">
+       <div class="review_slider_custom_slider_new_item_inner">
+       <div class="review_slider_custom_slider_new_item_bg left">
+       <div class="review_slider_custom_slider_top">
+         
+          {% if block.settings.image != blank %}
+            <div class="review_image_slider_new">
+            <img src="{{ block.settings.image | image_url }}" width="auto" height="auto" fetchpriority="{{ block.settings.fetchpriority }}" loading="{{ block.settings.loading }}" alt="{{ block.settings.image.alt }}">  
+            </div>
+            {% endif %}
+    <div class="review_rating"><svg xmlns="http://www.w3.org/2000/svg" width="122" height="21" viewBox="0 0 122 21" fill="none">
+  <path d="M9.8895 0.5L12.1016 7.308L19.2599 7.308L13.4687 11.5156L15.6807 18.3236L9.8895 14.116L4.09827 18.3236L6.31032 11.5156L0.519088 7.308L7.67744 7.308L9.8895 0.5Z" fill="black"/>
+  <path d="M35.4449 0.50012L37.657 7.30812L44.8153 7.30812L39.0241 11.5157L41.2361 18.3237L35.4449 14.1161L29.6537 18.3237L31.8657 11.5157L26.0745 7.30812L33.2329 7.30812L35.4449 0.50012Z" fill="black"/>
+  <path d="M61.0001 0.50012L63.2121 7.30812L70.3705 7.30812L64.5793 11.5157L66.7913 18.3237L61.0001 14.1161L55.2089 18.3237L57.4209 11.5157L51.6297 7.30812L58.788 7.30812L61.0001 0.50012Z" fill="black"/>
+  <path d="M86.5553 0.50012L88.7673 7.30812L95.9257 7.30812L90.1344 11.5157L92.3465 18.3237L86.5553 14.1161L80.764 18.3237L82.9761 11.5157L77.1849 7.30812L84.3432 7.30812L86.5553 0.50012Z" fill="black"/>
+  <path d="M112.11 0.50012L114.322 7.30812L121.481 7.30812L115.69 11.5157L117.902 18.3237L112.11 14.1161L106.319 18.3237L108.531 11.5157L102.74 7.30812L109.898 7.30812L112.11 0.50012Z" fill="black"/>
+</svg></div>
+          {% if block.settings.title != blank %}
+            <div class="review_title_slider_new">{{ block.settings.title }}</div>
+            {% endif %}
+          {% if block.settings.text != blank %}
+            <div class="review_text_slider_new">{{ block.settings.text }}</div>
+            {% endif %}
+          </div>
+          
+       <div class="review_slider_custom_slider_bottom">
+
+          
+          {% if block.settings.name != blank %}
+            
+          <div class="review_name_main">
+          <div class="review_name"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+  <circle cx="10.5" cy="10.2053" r="7.3125" stroke="black" stroke-width="1.625"/>
+  <path d="M7.25 10.2053L9.6875 12.6428L13.75 7.76776" stroke="black" stroke-width="1.625"/>
+</svg>
+      <span>{{ block.settings.name }}</span></div>
+  </div>
+            {% endif %}
+       </div>
+       </div>
+          </div>
+       </div>
+       {% endfor %}
+       </div>
+
+
+    
+     </div>
+
+
+    
+
+
+    
+     <div class="slider_navigations center{% if section.blocks.size < 4 %} mobile_only{% endif %}">
+  <div class="slider_button_custom prev_custom_slick_button prev_{{ section.id }}"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+  <path d="M0.4999 6.5C0.223758 6.22386 0.223758 5.77614 0.4999 5.5L4.9999 1C5.27604 0.723858 5.72376 0.723858 5.9999 1C6.27604 1.27614 6.27604 1.72386 5.9999 2L1.9999 6L5.9999 10C6.27604 10.2761 6.27604 10.7239 5.9999 11C5.72376 11.2761 5.27604 11.2761 4.9999 11L0.4999 6.5ZM1 6.70711L0.9999 6.70711L0.9999 5.29289L1 5.29289L1 6.70711Z" fill="black"/>
+</svg></div>
+       <div class="slider_dots_custom dots_{{ section.id }}"></div>
+  <div class="slider_button_custom next_custom_slick_button next_{{ section.id }}"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+  <path d="M6.5001 6.5C6.77624 6.22386 6.77624 5.77614 6.5001 5.5L2.0001 1C1.72396 0.723858 1.27624 0.723857 1.0001 1C0.723958 1.27614 0.723958 1.72386 1.0001 2L5.0001 6L1.0001 10C0.723957 10.2761 0.723957 10.7239 1.0001 11C1.27624 11.2761 1.72396 11.2761 2.0001 11L6.5001 6.5ZM6 6.70711L6.0001 6.70711L6.0001 5.29289L6 5.29289L6 6.70711Z" fill="black"/>
+</svg></div>
+     </div>
+
+
+  </div>
+
+     
+   </div>
+  </div>
+
+
+
+<script>
+    $('.slider_{{ section.id }}').slick({
+  dots: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  infinite: true,
+    prevArrow: $('.prev_{{ section.id }}'),
+    nextArrow: $('.next_{{ section.id }}'),
+    appendDots: $('.dots_{{ section.id }}'),
+  cssEase:'linear',
+  responsive: [
+    {
+      breakpoint: 915,
+      settings: {
+        slidesToShow:1, 
+adaptiveHeight: true,
+      }
+    }
+  ]
+});
+  
+</script>
+{% schema %}
+  {
+    "name": "reviews Slider",
+    "settings": [
+      {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    },
+    {
+      "type": "text",
+      "id": "custom_id",
+      "label": "Custom ID"
+    },
+      {
+      "type": "image_picker",
+      "id": "bg",
+      "label": "Section Background"
+    },
+      {
+      "type": "image_picker",
+      "id": "bg_mobile",
+      "label": "Section Background"
+    },
+     {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section Background Color"
+    },
+     {
+      "type": "color",
+      "id": "color",
+      "label": "Section Text Color"
+    },
+     {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+     {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top Desktop",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom Desktop",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top Mobile",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom Mobile",
+      "default": 50
+    }
+    ],
+  "blocks": [
+     {
+      "type": "review",
+      "name": "Review",
+      "settings": [ 
+    {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+           {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title"
+        },
+          {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "Text"
+        },
+          {
+          "type": "inline_richtext",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "select",
+          "id": "loading",
+          "options": [
+            {
+              "value": "lazy",
+              "label": "Lazy"
+            },
+            {
+              "value": "eager",
+              "label": "Eager"
+            }
+          ],
+          "default": "lazy",
+          "label": "Image Loading"
+        },
+        {
+          "type": "select",
+          "id": "fetchpriority",
+          "options": [
+            {
+              "value": "low",
+              "label": "Low"
+            },
+            {
+              "value": "high",
+              "label": "High"
+            }
+          ],
+          "default": "low",
+          "label": "Image Fetchpriority"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Review Slider"
+    }
+  ]
+  }
+{% endschema %}
