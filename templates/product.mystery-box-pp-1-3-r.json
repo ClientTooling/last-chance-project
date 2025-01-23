@@ -432,30 +432,33 @@
         "image_with_text_TW3gxA": {
           "type": "image_with_text",
           "settings": {
+            "image": "shopify://shop_images/DE-7.jpg",
             "title": "",
             "heading_tag": "h3",
             "content": "",
-            "link_url": "",
+            "link_url": "shopify://collections/unsere-bags",
             "link_text": ""
           }
         },
         "image_with_text_eFz7cr": {
           "type": "image_with_text",
           "settings": {
+            "image": "shopify://shop_images/DE-8.jpg",
             "title": "",
             "heading_tag": "h3",
             "content": "",
-            "link_url": "",
+            "link_url": "shopify://collections/mini-pouches",
             "link_text": ""
           }
         },
         "image_with_text_cNYfYx": {
           "type": "image_with_text",
           "settings": {
+            "image": "shopify://shop_images/DE-9.jpg",
             "title": "",
             "heading_tag": "h3",
             "content": "",
-            "link_url": "",
+            "link_url": "shopify://collections/charm-drops",
             "link_text": ""
           }
         }
