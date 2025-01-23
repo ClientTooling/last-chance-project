@@ -996,29 +996,6 @@
         "padding_bottom_mobile": 0
       }
     },
-    "tabs_HQXzGM": {
-      "type": "tabs",
-      "blocks": {
-        "tab_hVrJed": {
-          "type": "tab",
-          "settings": {
-            "title": "Tab 1",
-            "content": "<p>Use this text to share information about your brand with your customers.</p>",
-            "page": "",
-            "open_on_mobile": false
-          }
-        }
-      },
-      "block_order": [
-        "tab_hVrJed"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "subheading": "",
-        "title": "",
-        "text_alignment": "center"
-      }
-    },
     "collection_slider_YMHT4R": {
       "type": "collection_slider",
       "blocks": {
@@ -1246,7 +1223,6 @@
     "image_with_text_lp_Nzfy9T",
     "image_with_text_lp_PXim4c",
     "image_with_text_lp_VXnhXC",
-    "tabs_HQXzGM",
     "collection_slider_YMHT4R",
     "image_with_text_lp_bCU4dy",
     "richtext_lp_TfyLMT"
