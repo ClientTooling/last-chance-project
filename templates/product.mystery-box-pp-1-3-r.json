@@ -189,10 +189,6 @@
             "bancontact": false
           }
         },
-        "essential_upsell_frequently_bought_together_app_block_cpkFmw": {
-          "type": "shopify://apps/essential-upsell/blocks/frequently-bought-together-app-block/50627fd9-24fd-4250-8614-accc12826d80",
-          "settings": {}
-        },
         "bundle_ep7BUK": {
           "type": "bundle",
           "disabled": true,
@@ -253,6 +249,13 @@
             "border_thickness": 1
           }
         },
+        "description_m6WWth": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true,
+            "show_below_gallery": false
+          }
+        },
         "liquid_LnxNyx": {
           "type": "liquid",
           "disabled": true,
@@ -264,13 +267,6 @@
           "type": "separator",
           "disabled": true,
           "settings": {}
-        },
-        "description_m6WWth": {
-          "type": "description",
-          "settings": {
-            "collapse_content": true,
-            "show_below_gallery": false
-          }
         },
         "accordion_LNi7qJ": {
           "type": "accordion",
@@ -322,12 +318,11 @@
         "feature_with_icon_fbNKHB",
         "buy_buttons",
         "sternify_payment_icons_8jx9QC",
-        "essential_upsell_frequently_bought_together_app_block_cpkFmw",
         "bundle_ep7BUK",
         "sternify_benefit_four_boxes_v2_q7zc3y",
+        "description_m6WWth",
         "liquid_LnxNyx",
         "separator_qBeNiN",
-        "description_m6WWth",
         "accordion_LNi7qJ",
         "accordion_QKbcef",
         "accordion_VLeLj8"
