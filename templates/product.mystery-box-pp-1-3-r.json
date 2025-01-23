@@ -344,319 +344,6 @@
         "max_image_zoom_level": 3
       }
     },
-    "multiple_media_with_text_YnMdpC": {
-      "type": "multiple-media-with-text",
-      "blocks": {
-        "image_tVJYAp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/15_ab01b53e-edd3-4bea-a62d-f8bb927c1be0.png",
-            "rotation": 0
-          }
-        },
-        "image_LMKNhE": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/18_207f8f06-f03f-4582-8a28-c42240b2ee7f.png",
-            "rotation": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_tVJYAp",
-        "image_LMKNhE"
-      ],
-      "disabled": true,
-      "settings": {
-        "reveal_on_scroll": true,
-        "separate_section_with_border": true,
-        "media_position_desktop": "after_text",
-        "media_position_mobile": "before_text",
-        "media_layout": "overlap",
-        "media_alignment": "center",
-        "media_alignment_offset": 0,
-        "media_mobile_alignment_offset": 0,
-        "text_alignment": "center",
-        "subheading": "The Perfect neutral",
-        "title": "MACH ES ZUM CENTERPIECE",
-        "content": "<p><strong>Trag mit deiner neuen Everyday BB Tasche ruhig ein neutrales Outfit & mach die Tasche zum Center Piece!</strong></p>",
-        "button_1_text": "",
-        "button_1_link": "",
-        "button_1_style": "solid",
-        "button_2_text": "",
-        "button_2_link": "",
-        "button_2_style": "solid",
-        "background": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
-    "image_with_text_4mFGch": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_e69naF": {
-          "type": "heading",
-          "settings": {
-            "text": "<strong>Die Perfekte tasche für den Girlie Alltag.</strong>",
-            "heading_tag": "h3"
-          }
-        },
-        "richtext_kDCVzW": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Die Tasche gemacht für das tägliche Tragen. Egal ob Uni, Schule, oder Cafe - <strong>designed by women for women.</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_e69naF",
-        "richtext_kDCVzW"
-      ],
-      "disabled": true,
-      "settings": {
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/download_2.gif",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": true
-      }
-    },
-    "image_with_text_wCaxXA": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_D4wUWy": {
-          "type": "subheading",
-          "settings": {
-            "text": "Deutsches start-up mit ambition <3"
-          }
-        },
-        "heading_NB3Kct": {
-          "type": "heading",
-          "settings": {
-            "text": "Die Noirvere-Story",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_MNRKLJ": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p><strong>\"Damals hatten wir die gleichen Erkenntnisse wie viele Frauen: Es gibt zu viele Taschen ohne Qualität, Überteuert bis ins geht nicht mehr, olle Farben, cheaper look, passt nix rein... Also beschlossen wir die Sachen als Girl-Boss anzugehen, und gründeten zusammen Noirvere.\"<br/><br/>- Noirvere founder Team</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_D4wUWy",
-        "heading_NB3Kct",
-        "richtext_MNRKLJ"
-      ],
-      "disabled": true,
-      "settings": {
-        "separate_section_with_border": true,
-        "image": "shopify://shop_images/Wer_das_liesst_ist_ein_Loser_21.png",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": true
-      }
-    },
-    "image_with_text_8prBJH": {
-      "type": "image-with-text",
-      "disabled": true,
-      "settings": {
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/Design_ohne_Titel_-_2024-08-05T032534.015.png",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": true
-      }
-    },
-    "image_with_text_block_rGUVhL": {
-      "type": "image-with-text-block",
-      "blocks": {
-        "subheading_pnTrLP": {
-          "type": "subheading",
-          "settings": {
-            "text": "<strong>WARUM NOIRVERE?</strong>"
-          }
-        },
-        "richtext_CgbgGK": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Noirvere steht für <strong>zeitlose, elegante </strong>Handtaschen aus veganem Leder <strong>ohne Kompromisse</strong> in puncto Qualität. </p><p>Wir bieten Taschen, die nicht  schon nach zwei Monaten im Schrank verschwinden sondern Zeitlos & passend für den Alltag sind und bleiben.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_pnTrLP",
-        "richtext_CgbgGK"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_size": "lg",
-        "image": "shopify://shop_images/25cm_34_12ecfb56-59c7-4779-a2cf-832ae01c0b32.png",
-        "content_width": "lg",
-        "enable_parallax": false,
-        "remove_vertical_spacing": false,
-        "block_text_color": "#000000",
-        "block_background": "#ffffff"
-      }
-    },
-    "rich_text_HJhmc9": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_G4yjVN": {
-          "type": "heading",
-          "settings": {
-            "text": "pack my bag w me <3",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_G4yjVN"
-      ],
-      "disabled": true,
-      "settings": {
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": true
-      }
-    },
-    "image_with_text_eUD3tx": {
-      "type": "image-with-text",
-      "disabled": true,
-      "settings": {
-        "separate_section_with_border": false,
-        "image": "shopify://shop_images/10_c4888809-27f2-4a79-b1b8-1d97cb4675b2.png",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
-    },
-    "rich_text_HCxig9": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Di34bi": {
-          "type": "heading",
-          "settings": {
-            "text": "quiet luxury",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_tUJCQV": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p><strong>Anstatt 5000$ für einen 57$ Dior-Bag auszugeben bieten wir dir bei Noirvere Affordable Luxury.<br/>Wir stehen für Deep Colors, Alltäglichen Gebrauch & Eleganz ohne eine Haus-Anzahlung auszugeben.</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Di34bi",
-        "richtext_tUJCQV"
-      ],
-      "disabled": true,
-      "settings": {
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": true
-      }
-    },
-    "image_with_text_ghK6pt": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_dzimh4": {
-          "type": "heading",
-          "settings": {
-            "text": "<strong>100-tägige Geld-zurück-Garantie</strong>",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_cUKtzw": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p><strong>Wir versprechen, dass ihr  aufgrund von zu vielen Komplimenten nicht mehr rauswollt. ABER falls euch die Aufmerksamkeit zu viel wird bieten wir eine 100-Tägige Geld-zurück-Garantie, denn Noirvere steht hinter deiner Happiness.</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_dzimh4",
-        "richtext_cUKtzw"
-      ],
-      "disabled": true,
-      "settings": {
-        "separate_section_with_border": true,
-        "image": "shopify://shop_images/Wer_das_liesst_ist_ein_Loser_23.png",
-        "mobile_image": "shopify://shop_images/Wer_das_liesst_ist_ein_Loser_23.png",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": false
-      }
-    },
-    "multi_column_6p9Lf6": {
-      "type": "multi-column",
-      "blocks": {
-        "image_with_text_qMn6rt": {
-          "type": "image_with_text",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Wer_das_liesst_ist_ein_Loser_22.png",
-            "title": "2. Tasche 50% OFF",
-            "heading_tag": "h3",
-            "content": "<p><strong>Auf unseren bis zu 60%igen Sommer Sale geben wir NOCHMAL 50% auf jede 2. Tasche die dazu gekauft wird.<br/><br/>Everyday Bags, die sich lohnen.</strong></p>",
-            "link_url": "",
-            "link_text": ""
-          }
-        },
-        "image_with_text_BCAxU3": {
-          "type": "image_with_text",
-          "settings": {
-            "image": "shopify://shop_images/Wer_das_liesst_ist_ein_Loser_23.png",
-            "title": "100-tägige Geld-zurück-Garantie",
-            "heading_tag": "h3",
-            "content": "<p><strong>Wir versprechen, dass ihr  aufgrund von zu vielen Komplimenten nicht mehr rauswollt. ABER falls euch die Aufmerksamkeit zu viel wird bieten wir eine 100-Tägige Geld-zurück-Garantie, denn Noirvere steht hinter deiner Happiness.</strong></p>",
-            "link_url": "",
-            "link_text": ""
-          }
-        },
-        "image_with_text_nAYpeR": {
-          "type": "image_with_text",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/file_7.png",
-            "title": "GRATIS VERSAND",
-            "heading_tag": "h3",
-            "content": "<p><strong>Um dir dein Investment in dich selbst zu ermöglichen, bieten wir im SALE GRATIS Versand, und dies ohne Mindestbestellwert!</strong></p>",
-            "link_url": "",
-            "link_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_qMn6rt",
-        "image_with_text_BCAxU3",
-        "image_with_text_nAYpeR"
-      ],
-      "disabled": true,
-      "settings": {
-        "separate_section_with_border": false,
-        "columns_per_row": 3,
-        "stack_on_mobile": false,
-        "overlap_image": false,
-        "content_alignment": "start",
-        "text_alignment": "start",
-        "spacing": "md",
-        "subheading": "",
-        "title": "<strong>UNSER SOMMER-SALE ANGEBOT</strong>",
-        "content": ""
-      }
-    },
     "rich_text_mhGGhT": {
       "type": "rich-text",
       "blocks": {
@@ -711,6 +398,32 @@
         "separate_section_with_border": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false
+      }
+    },
+    "rich_text_HxbJE3": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_6piNyL": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Empfohlene Kollektionen</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_6piNyL"
+      ],
+      "custom_css": [
+        "div.prose.text-center p {font-size: 20px; font-weight: bold; text-align: center; line-height: 1.5; margin: 20px 0; font-family: Montserrat;}",
+        ".container {margin-bottom: -45px;}",
+        ".container {margin-top: 70px;}",
+        " /* Breite des Textcontainers in der Rich Text Section anpassen */"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": true
       }
     },
     "multi_column_VeDfVx": {
@@ -773,7 +486,7 @@
           "settings": {
             "collection": "everday",
             "products_count": 8,
-            "title": "Passend Dazu",
+            "title": "Passend dazu",
             "link_url": "",
             "link_text": "View all"
           }
@@ -781,6 +494,11 @@
       },
       "block_order": [
         "collection_Ftm6aN"
+      ],
+      "custom_css": [
+        "div.text-center p {font-size: 20px; font-weight: bold; text-align: center; line-height: 1.5; margin: 20px 0; font-family: Montserrat;}",
+        ".container {margin-top: 70px;}",
+        " /* Breite des Textcontainers in der Rich Text Section anpassen */"
       ],
       "settings": {
         "separate_section_with_border": true,
@@ -930,18 +648,9 @@
   },
   "order": [
     "main",
-    "multiple_media_with_text_YnMdpC",
-    "image_with_text_4mFGch",
-    "image_with_text_wCaxXA",
-    "image_with_text_8prBJH",
-    "image_with_text_block_rGUVhL",
-    "rich_text_HJhmc9",
-    "image_with_text_eUD3tx",
-    "rich_text_HCxig9",
-    "image_with_text_ghK6pt",
-    "multi_column_6p9Lf6",
     "rich_text_mhGGhT",
     "1720551022fbeec295",
+    "rich_text_HxbJE3",
     "multi_column_VeDfVx",
     "featured_collections_jUNYRf",
     "faq_PBbAPX",
