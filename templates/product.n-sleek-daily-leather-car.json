@@ -337,12 +337,36 @@
         "vertical_spacing_factor": 1,
         "subheading": ""
       }
+    },
+    "tabs_gFBM4E": {
+      "type": "tabs",
+      "blocks": {
+        "tab_XCVqzN": {
+          "type": "tab",
+          "settings": {
+            "title": "PRODUKTSICHERHEIT",
+            "content": "<p><em><strong>Seit 2025 von der EU gefordert:</strong></em></p><p><strong>Produktart</strong></p><ul><li>Handtasche</li></ul><p></p><p><strong>Warnhinweise</strong></p><ul><li>Dieses Produkt ist kein Spielzeug. Halten Sie es von Kindern unter 3 Jahren fern.</li><li>Achten Sie darauf, die Tasche nicht mit übermäßig schweren Gegenständen zu belasten, um Materialverschleiß zu verhindern.</li><li>Kleinteile wie Reißverschlüsse und Magnetverschlüsse könnten verschluckt werden. Bitte Vorsicht walten lassen.</li></ul><p></p><p><strong>Artikelnummer</strong><br/>Dieses Produkt trägt die Artikelnummer: SLEEKDISTRESSEDLEATHERCARRY-(Hier Namen der Farbe auf deutsch in Kleinbuchstaben einfügen)</p><p></p><p><strong>Verantwortliche Person in der EU</strong><br/>Für Fragen oder weitere Informationen wenden Sie sich bitte an:<br/>Name: PROCONSEIL FR<br/>Adresse: 8 bis rue Abel 75012 Paris, France<br/>E-Mail: SophieDupont@proconseilfr.com</p><p></p><p><strong>Materialinformationen</strong><br/>Unsere Handtaschen bestehen aus sorgfältig ausgewählten Materialien wie hochwertigem Kunstleder und strapazierfähigen Metallteilen. </p><p></p><p><strong>Pflegehinweise</strong></p><ul><li>Reinigen Sie die Tasche mit einem weichen, feuchten Tuch.</li><li>Verwenden Sie keine aggressiven Chemikalien oder Scheuermittel, um Beschädigungen zu vermeiden.</li><li>Vermeiden Sie übermäßige Feuchtigkeit, um die Langlebigkeit zu gewährleisten.</li></ul><p></p><p><strong>Nachhaltigkeit & Entsorgung</strong><br/>Unsere Handtaschen sind so konzipiert, dass sie lange Freude bereiten. Sollte die Tasche entsorgt werden, bitten wir Sie, dies umweltgerecht zu tun. Entnehmen Sie alle Metallteile und geben Sie sie in den Metallrecycling-Behälter. Textilien können über lokale Recyclingstellen entsorgt werden.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "tab_XCVqzN"
+      ],
+      "settings": {
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "",
+        "text_alignment": "center"
+      }
     }
   },
   "order": [
     "main",
     "173687955039cfc31e",
     "image_with_text_block_rGUVhL",
-    "featured_collections_jUNYRf"
+    "featured_collections_jUNYRf",
+    "tabs_gFBM4E"
   ]
 }
