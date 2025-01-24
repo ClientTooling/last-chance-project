@@ -474,6 +474,7 @@
       "block_order": [
         "button_eeECwn"
       ],
+      "disabled": true,
       "settings": {
         "separate_section_with_border": false,
         "content_width": "sm",
@@ -494,6 +495,7 @@
       "block_order": [
         "richtext_87Gjc6"
       ],
+      "disabled": true,
       "settings": {
         "separate_section_with_border": false,
         "content_width": "sm",
