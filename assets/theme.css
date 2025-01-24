@@ -7750,3 +7750,8 @@ ul {
       font-weight: 400;
       gap: 3px;
 }
+
+
+.accordion-group.sm\:hidden {
+    display: block;
+}
