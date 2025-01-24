@@ -902,6 +902,7 @@
       "block_order": [
         "button_XytcPD"
       ],
+      "disabled": true,
       "settings": {
         "separate_section_with_border": false,
         "content_width": "lg",
@@ -914,6 +915,7 @@
       "blocks": {
         "richtext_nyJbe8": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "content": "<p></p><p>.</p>"
           }
