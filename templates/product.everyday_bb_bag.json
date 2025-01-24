@@ -1118,49 +1118,6 @@
         "padding_bottom_mobile": 0
       }
     },
-    "tabs_mAJfCR": {
-      "type": "tabs",
-      "blocks": {
-        "tab_xhmVcM": {
-          "type": "tab",
-          "settings": {
-            "title": "Tab 1",
-            "content": "<p>Use this text to share information about your brand with your customers.</p>",
-            "page": "",
-            "open_on_mobile": false
-          }
-        },
-        "tab_UPeQJx": {
-          "type": "tab",
-          "settings": {
-            "title": "Tab 2",
-            "content": "<p>Describe a product, share announcements, or welcome customers to your store.</p>",
-            "page": "",
-            "open_on_mobile": false
-          }
-        },
-        "tab_Wg37tA": {
-          "type": "tab",
-          "settings": {
-            "title": "Tab 3",
-            "content": "<p>Share information about your shipping rates, return policy or contact information.</p>",
-            "page": "",
-            "open_on_mobile": false
-          }
-        }
-      },
-      "block_order": [
-        "tab_xhmVcM",
-        "tab_UPeQJx",
-        "tab_Wg37tA"
-      ],
-      "settings": {
-        "separate_section_with_border": true,
-        "subheading": "",
-        "title": "Heading",
-        "text_alignment": "center"
-      }
-    },
     "richtext_lp_TfyLMT": {
       "type": "richtext_lp",
       "blocks": {
@@ -1268,7 +1225,6 @@
     "image_with_text_lp_VXnhXC",
     "collection_slider_YMHT4R",
     "image_with_text_lp_bCU4dy",
-    "tabs_mAJfCR",
     "richtext_lp_TfyLMT"
   ]
 }
