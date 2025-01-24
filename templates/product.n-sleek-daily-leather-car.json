@@ -354,6 +354,9 @@
       "block_order": [
         "tab_XCVqzN"
       ],
+      "custom_css": [
+        ".container {margin-bottom: -50px;}"
+      ],
       "settings": {
         "separate_section_with_border": false,
         "subheading": "",
